@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "680287198270",
+    "firebase_url": "https://flutter-shop-crud.firebaseio.com",
+    "project_id": "flutter-shop-crud",
+    "storage_bucket": "flutter-shop-crud.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680287198270:android:a4975771887f0df911056f",
+        "android_client_info": {
+          "package_name": "techfun.com.shop_bloc_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680287198270-e5rchr688ua6h7s7mao54b3eq5ojkud5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "techfun.com.shop_bloc_firebase",
+            "certificate_hash": "1b72788dfa76975e70a03a889f954524b3d2810f"
+          }
+        },
+        {
+          "client_id": "680287198270-ms5lklnmmacltetp0r5un8mlkk7u7ofo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBFuf2ZVHoBenQhNuyLR5P9feMFYdM2aY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680287198270-ms5lklnmmacltetp0r5un8mlkk7u7ofo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
