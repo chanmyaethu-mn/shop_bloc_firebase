@@ -2,7 +2,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shop_bloc_firebase/common/constants.dart';
 import 'package:shop_bloc_firebase/signup/bloc/signup_event.dart';
 import 'package:shop_bloc_firebase/signup/bloc/signup_state.dart';
-import 'package:shop_bloc_firebase/signup/model/signup_provider.dart';
+import 'package:shop_bloc_firebase/signup/model/signup_service.dart';
 
 class SignupBloc extends Bloc<SignupBtnEvent, SignupState> {
   @override
@@ -19,9 +19,9 @@ class SignupBloc extends Bloc<SignupBtnEvent, SignupState> {
     yield SignupLoadingState();
 
     try {
-      final result = await SignUpProvider().insertUser(event.user);
+      final isSuccess = await SignupService().insertUser(event.user);
 
-      if (result.documentID.isNotEmpty) {
+      if (isSuccess) {
         yield SignupSuccessState(SUCCESS);
       } else {
         yield SignupSuccessState(FAIL);

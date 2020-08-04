@@ -1,5 +1,3 @@
-import 'package:shop_bloc_firebase/common/model/user.dart';
-
 const String SIGNUP_INIT = "SIGNUP_INIT";
 const String LOADING = "LOADING";
 
@@ -16,17 +14,6 @@ class SignupLoadingState extends SignupState {
   @override
   String toString() {
     return LOADING;
-  }
-}
-
-class SignupRequestState extends SignupState {
-  final User user;
-
-  SignupRequestState(this.user);
-
-  @override
-  String toString() {
-    return user.toJson();
   }
 }
 
